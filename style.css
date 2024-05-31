@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    font-family: Nanum Gothic, sans-serif;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100%; */
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #00a6fb, #70e000);
+}
+
+.calculator {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content input {
+    background: transparent;
+    border: 0;
+    outline: 0;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    transition: border 1s ease-in-out;
+}
+
+.content input:hover {
+    border: 1px solid aliceblue;
+}
+
+.display {
+    max-width: 254px;
+    min-height: 50px;
+    background-color: #ced4da;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    margin-bottom: 10px;
+}
+
+input.equal {
+    width: 6.6em;
+}
+
+input.opt,
+input.equal {
+    background-color: #e2711d;
+}
+
+.display .curr {
+    font-size: 1.5em;
+    color: #212529;
+}
+
+.display .prev,
+.display .error {
+    font-size: 0.8em;
+    color: #495057;
+}
